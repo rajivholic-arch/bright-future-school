@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future School</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f7fc;color:#172b4d}
+header{background:#102b50;color:white;padding:22px;text-align:center}
+header h1{font-size:26px}
+header p{margin-top:8px;color:#d9e5f5}
+nav{background:#173c6c;padding:15px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px;display:inline-block}
+.hero{padding:85px 20px;text-align:center;background:linear-gradient(135deg,#102b50,#2866a8);color:white}
+.hero h2{font-size:36px;margin-bottom:15px}
+.hero p{line-height:1.7;margin-bottom:25px}
+.btn{background:#e8bd5b;color:#102b50;padding:13px 23px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block}
+section{padding:55px 20px;text-align:center}
+section h2{font-size:28px;margin-bottom:22px;color:#173c6c}
+section p{line-height:1.8}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:25px}
+.card{background:white;padding:25px;border-radius:12px;width:270px;box-shadow:0 5px 18px #102b5015}
+.card h3{color:#1c5790;margin-bottom:12px}
+.card p{color:#606b7a}
+.icon{font-size:35px;margin-bottom:12px}
+.about{background:white}
+.notice{background:#eaf1fa}
+form{max-width:450px;margin:25px auto 0}
+input,textarea{width:100%;padding:14px;margin:8px 0;border:1px solid #ccd5e2;border-radius:7px;font-size:15px}
+button{background:#173c6c;color:white;padding:13px 25px;border:0;border-radius:7px;font-size:15px}
+footer{background:#102b50;color:white;text-align:center;padding:28px;line-height:2}
+@media(max-width:600px){
+.hero h2{font-size:29px}
+nav a{margin:6px;font-size:13px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🎓 Bright Future School</h1>
+<p>Learn Today, Lead Tomorrow</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#facilities">Facilities</a>
+<a href="#notices">Notices</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Welcome to Bright Future School</h2>
+<p>Discover knowledge, develop skills and build a brighter future.</p>
+<a href="#about" class="btn">Explore Our School</a>
+</div>
+
+<section class="about" id="about">
+<h2>About Our School</h2>
+<p>Bright Future School is committed to quality education, creativity and student development. Our mission is to help every student learn, grow and achieve their dreams.</p>
+</section>
+
+<section id="facilities">
+<h2>Our Facilities</h2>
+<div class="cards">
+<div class="card">
+<div class="icon">📚</div>
+<h3>Library</h3>
+<p>A peaceful environment for reading and learning.</p>
+</div>
+<div class="card">
+<div class="icon">💻</div>
+<h3>Computer Lab</h3>
+<p>Modern technology for practical computer education.</p>
+</div>
+<div class="card">
+<div class="icon">🔬</div>
+<h3>Science Lab</h3>
+<p>Explore science through practical learning.</p>
+</div>
+<div class="card">
+<div class="icon">⚽</div>
+<h3>Sports</h3>
+<p>Encouraging teamwork, fitness and sportsmanship.</p>
+</div>
+</div>
+</section>
+
+<section class="notice" id="notices">
+<h2>Latest Notices</h2>
+<div class="cards">
+<div class="card">
+<h3>📢 Admission Notice</h3>
+<p>New student admissions are open.</p>
+</div>
+<div class="card">
+<h3>📝 Examination Notice</h3>
+<p>Please check the examination schedule.</p>
+</div>
+<div class="card">
+<h3>🎉 School Events</h3>
+<p>Stay updated about upcoming school events.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>We would love to hear from you!</p>
+<form id="contactForm">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<h3>Bright Future School 🎓</h3>
+<p>Learn Today, Lead Tomorrow</p>
+<p>© 2026 Bright Future School | Student Computer Project</p>
+</footer>
+
+<script>
+document.getElementById("contactForm")
+.addEventListener("submit",function(e){
+e.preventDefault();
+alert("Thank you for contacting Bright Future School!");
+this.reset();
+});
+</script>
+
+</body>
+</html>
